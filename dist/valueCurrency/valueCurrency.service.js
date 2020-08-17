@@ -39,7 +39,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.storeValueSer = void 0;
+exports.getValuesSer = exports.storeValueSer = void 0;
 var valueCurrency_model_1 = __importDefault(require("./valueCurrency.model"));
 exports.storeValueSer = function (valueCurrency) { return __awaiter(void 0, void 0, void 0, function () {
     var valueCurrencyCreate;
@@ -52,6 +52,17 @@ exports.storeValueSer = function (valueCurrency) { return __awaiter(void 0, void
             case 2:
                 _a.sent();
                 return [2 /*return*/, valueCurrencyCreate];
+        }
+    });
+}); };
+exports.getValuesSer = function () { return __awaiter(void 0, void 0, void 0, function () {
+    var values;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, valueCurrency_model_1.default.find()];
+            case 1:
+                values = _a.sent();
+                return [2 /*return*/, values];
         }
     });
 }); };

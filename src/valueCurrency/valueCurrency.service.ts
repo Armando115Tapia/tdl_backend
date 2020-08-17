@@ -6,3 +6,8 @@ export const storeValueSer = async (valueCurrency: valueCurrencyI) => {
   await valueCurrencyCreate.save();
   return valueCurrencyCreate;
 };
+
+export const getValuesSer = async () => {
+  const values = await valueCurrencyModel.find();
+  return values;
+};

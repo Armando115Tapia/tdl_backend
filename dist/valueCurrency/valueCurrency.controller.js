@@ -36,18 +36,31 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.storeValueCont = void 0;
+exports.getValuesCont = exports.storeValueCont = void 0;
 var valueCurrency_service_1 = require("./valueCurrency.service");
-exports.storeValueCont = function (req, res, next) { return __awaiter(void 0, void 0, void 0, function () {
+exports.storeValueCont = function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
     var body, valueCurrency;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
                 body = req.body;
+                console.log(body);
                 return [4 /*yield*/, valueCurrency_service_1.storeValueSer(body)];
             case 1:
                 valueCurrency = _a.sent();
                 res.send({ msm: 'ok', valueCurrency: valueCurrency });
+                return [2 /*return*/];
+        }
+    });
+}); };
+exports.getValuesCont = function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+    var values;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, valueCurrency_service_1.getValuesSer()];
+            case 1:
+                values = _a.sent();
+                res.send({ msm: 'ok', values: values });
                 return [2 /*return*/];
         }
     });

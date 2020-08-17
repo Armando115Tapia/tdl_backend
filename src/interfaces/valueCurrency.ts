@@ -1,5 +1,5 @@
 interface valueCurrencyI {
-  day: String;
+  date: String;
   value: number;
 }
 
