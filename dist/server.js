@@ -60,9 +60,9 @@ var Server = /** @class */ (function () {
                 switch (_a.label) {
                     case 0:
                         _a.trys.push([0, 2, , 3]);
-                        return [4 /*yield*/, mongoose.connect(
-                            // `mongodb://192.168.100.243:27017/database_tdl`,
-                            "mongodb://Armandev:Armas1350_epis@ds137271.mlab.com:37271/todolegal", {
+                        return [4 /*yield*/, mongoose.connect("mongodb://192.168.100.243:27017/database_tdl", 
+                            //`mongodb://Armandev:Armas1350_epis@ds137271.mlab.com:37271/todolegal`,
+                            {
                                 useNewUrlParser: true,
                                 useFindAndModify: false,
                                 useUnifiedTopology: true,

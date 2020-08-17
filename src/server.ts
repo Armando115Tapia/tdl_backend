@@ -1,5 +1,5 @@
 import express, { Application } from 'express';
-import mongoose = require("mongoose");
+import mongoose = require('mongoose');
 class Server {
   private static _instance: Server;
   public app: Application;
@@ -16,8 +16,8 @@ class Server {
   private async connectToTheDatabase() {
     try {
       const dataBaseconnect = await mongoose.connect(
-        // `mongodb://192.168.100.243:27017/database_tdl`,
-        `mongodb://Armandev:Armas1350_epis@ds137271.mlab.com:37271/todolegal`,
+        `mongodb://192.168.100.243:27017/database_tdl`,
+        //`mongodb://Armandev:Armas1350_epis@ds137271.mlab.com:37271/todolegal`,
         {
           useNewUrlParser: true,
           useFindAndModify: false,
