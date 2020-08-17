@@ -80,9 +80,9 @@ var Server = /** @class */ (function () {
         });
     };
     Server.prototype.start = function () {
-        this.app.listen((process.env.PORT || 5000, function () {
+        this.app.listen(process.env.PORT || 5000, function () {
             console.log('App running on: ', 5000);
-        }));
+        });
     };
     return Server;
 }());
