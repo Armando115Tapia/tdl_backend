@@ -4,6 +4,7 @@
   "description": "backend todolegal",
   "main": "index.js",
   "scripts": {
+    "start": "ts-node ./src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Armando Tapia",
@@ -14,7 +15,8 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.10.0"
+    "mongoose": "^5.10.0",
+    "ts-node": "^8.10.2"
   },
   "devDependencies": {
     "@types/express": "^4.17.7",
