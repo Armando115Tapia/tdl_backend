@@ -1,5 +1,5 @@
 import express, { Application } from 'express';
-import mongoose from 'mongoose';
+import * as mongoose from 'mongoose';
 class Server {
   private static _instance: Server;
   public app: Application;
